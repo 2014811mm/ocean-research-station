@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Research Station</title>
-    <!-- Підключення шрифту з Figma (Plus Jakarta Sans) -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-   
     <header class="header">
-        <h1 class="headertitle">Ocean Research Station</h1>
-        <p class="headersubtitle">Discover the mysteries of the deep</p>
+        <h1 class="header__title">Ocean Research Station</h1>
     </header>
 
-   
-    <section class="species-section">
-        <h2 class="species-section__counter">
-            Discovered species: <span id="counter">6</span>
-        </h2>
-        
-        <div class="cards-container">
-           
-            <div class="card">Clownfish</div>
-            <div class="card">Octopus</div>
-            <div class="card">Jellyfish</div>
-            <div class="card">Shark</div>
-            <div class="card">Sea Turtle</div>
-            <div class="card">Stingray</div>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <h1 class="hero-title">Ocean Research Station</h1>
+                <div class="description">
+                    <p class="description-text">Explore the ocean and discover marine life</p>
+                </div>
+            </div>
+        </section>
 
-    
-    <section class="depths-section">
-        <h2>Explore Ocean Depths</h2>
-        
-    </section>
+        <section class="discovered">
+            <div class="discovered-container">
+                <h2 class="discovered-title">Discovered Species</h2>
+            </div>
+            
+            <div class="cards-container">
+                <div class="species-card">
+                    <img src="./images/Clownfish.png" alt="Clownfish">
+                    <h3>Clownfish</h3>
+                </div>
+                <div class="species-card">
+                    <img src="./images/Octopus.png" alt="Octopus">
+                    <h3>Octopus</h3>
+                </div>
+                <div class="species-card">
+                    <img src="./images/Jellyfish.png" alt="Jellyfish">
+                    <h3>Jellyfish</h3>
+                </div>
+                <div class="species-card">
+                    <img src="./images/Shark.png" alt="Shark">
+                    <h3>Shark</h3>
+                </div>
+                <div class="species-card">
+                    <img src="./images/Sea turtle.png" alt="Sea Turtle">
+                    <h3>Sea Turtle</h3>
+                </div>
+                <div class="species-card">
+                    <img src="./images/Stingray.png" alt="Stingray">
+                    <h3>Stingray</h3>
+                </div>
+            </div>
+        </section>
 
-    
+        <section class="depths">
+            <div class="depths-container">
+                <h2 class="depths-title">Explore Ocean Depths</h2>
+                
+                <div class="zone-buttons">
+                    <button class="zone-btn active">Surface (0m)</button>
+                    <button class="zone-btn">Twilight Zone (-500m)</button>
+                    <button class="zone-btn">Abyss (-1000m)</button>
+                    <button class="zone-btn">Mariana Trench (-2000m)</button>
+                </div>
+
+                <div class="depth-card">
+                    <div class="depth-card__info">
+                        <h3 class="depth-card__subtitle">The Sunlit Surface</h3>
+                        <p class="depth-card__text">Тут твій текст опису цієї зони з макета океанічної станції.</p>
+                    </div>
+                    <div class="depth-card__image">
+                        <img src="./images/Sunlit Surface.png" alt="Sunlit Surface">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
+
 </html>
